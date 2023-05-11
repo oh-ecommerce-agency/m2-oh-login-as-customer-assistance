@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="OH_LoginAsCustomerAssistance::title"
+             title="Customer assistance"
+             parent="OH_Core::oh"
+             module="OH_LoginAsCustomerAssistance"
+             sortOrder="40"
+             resource="OH_LoginAsCustomerAssistance::settings"
+        />
+
+        <add id="OH_LoginAsCustomerAssistance::settings"
+             title="Setup"
+             module="OH_LoginAsCustomerAssistance"
+             sortOrder="50"
+             parent="OH_LoginAsCustomerAssistance::title"
+             action="adminhtml/system_config/edit/section/oh_customer_assistance/"
+             resource="OH_LoginAsCustomerAssistance::settings"
+        />
+    </menu>
+</config>
