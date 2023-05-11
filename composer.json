@@ -5,7 +5,7 @@
   "require": {
     "php": ">=7.4",
     "magento/framework": "*",
-    "magento/module-login-as-customer-assistance": "104.0.*",
+    "magento/module-login-as-customer-assistance": "*",
     "m2-oh/module-core": "*"
   },
   "license": [
